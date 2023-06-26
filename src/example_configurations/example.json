@@ -1,0 +1,68 @@
+{   
+    "dataset" : "C-1-AlfaRomeo-Giulia", 
+    "attacks" : [
+        {
+            "name": "basic0",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "0F0",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 1000,
+                "injected_packets": 20,
+                "implementation_type": "MASQUERADE" 
+            }
+        },
+        {
+            "name": "replay0",                    
+            "attack_type": "REPLAY",
+            "parameters": {
+                "id": "0F0",
+                "beginning_time_delta": 500.0,
+                "sniffing_time_delta": 100.0,
+                "injected_packets": 5,
+                "implementation_type": "MASQUERADE",
+                "replacements": [
+                    {
+                        "start": 0,
+                        "end": 4,
+                        "replacement_type": "PAYLOADS",
+                        "parameters": {
+                            "payloads": ["0000","0100", "1000", "1100", "1110"]
+                        }
+                    },
+                    {
+                        "start": 13,
+                        "end": 20,
+                        "replacement_type": "FUZZY",
+                        "parameters": {
+                            "seed": 42
+                        }
+                    },
+                    {
+                        "start": 20,
+                        "end": 24,
+                        "replacement_type": "MIN"
+                    },
+                    {
+                        "start": 52,
+                        "end": 56,
+                        "replacement_type": "COUNTER",
+                        "parameters":{
+                            "is_counter_decreasing": false
+                        }
+                    },
+                    {
+                        "start": 56,
+                        "end": 64,
+                        "replacement_type": "CONTINUOUS_CHANGE",
+                        "parameters":{
+                            "payloads": "0x00"
+                        }
+                    }  
+
+                ]
+            }
+
+        }
+    ]
+}

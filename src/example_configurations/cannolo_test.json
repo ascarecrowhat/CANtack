@@ -1,0 +1,16 @@
+{   
+    "dataset" : "/home/alenichel/dev/Thesis/datasets/validation.csv", 
+    "attacks" : [
+        {
+            "name": "basic0",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "1F7",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 50,
+                "injected_packets": 50,
+                "implementation_type": "MASQUERADE"
+            }
+        }
+    ]
+}

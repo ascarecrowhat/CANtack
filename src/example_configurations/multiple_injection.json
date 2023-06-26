@@ -1,0 +1,77 @@
+{   
+    "dataset" : "C-1-AlfaRomeo-Giulia", 
+    "attacks" : [
+        {
+            "name": "basic0",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "0F0",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 500,
+                "injected_packets": 10,
+                "implementation_type": "INJECTION",
+                "injection_rate": 20
+            }
+        },
+        {
+            "name": "basic1",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "1FC",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 550,
+                "injected_packets": 20,
+                "implementation_type": "INJECTION",
+                "injection_rate": 20
+            }
+        },
+        {
+            "name": "basic2",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "1F1",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 600,
+                "injected_packets": 30,
+                "implementation_type": "INJECTION",
+                "injection_rate": 20
+            }
+        },
+        {
+            "name": "basic3",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "11C",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 650,
+                "injected_packets": 40,
+                "implementation_type": "INJECTION",
+                "injection_rate": 20
+            }
+        },
+        {
+            "name": "basic4",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "73E",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 700,
+                "injected_packets": 50,
+                "implementation_type": "INJECTION",
+                "injection_rate": 20
+            }
+        },
+        {
+            "name": "basic5",
+            "attack_type": "BASIC",
+            "parameters": {
+                "id": "0F4",
+                "payload": "0xFFFFFFFFFFFFFFFF",
+                "beginning_time_delta": 750,
+                "injected_packets": 100,
+                "implementation_type": "INJECTION",
+                "injection_rate": 20
+            }
+        }
+    ]
+}
